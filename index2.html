@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url("./world_map2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+        .top-bar {
+            background-color: #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .top-bar h1 {
+            margin: 0;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+        }
+
+        .menu-icon::before {
+            content: "\2630";
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .topnav {
+            display: none;
+            background-color: #000000;
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            padding: 10px 0;
+        }
+
+        .topnav.active {
+            display: block;
+        }
+
+        .topnav a {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #1a1a1a;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var menuIcon = document.querySelector('.menu-icon');
+            var topnav = document.querySelector('.topnav');
+
+            menuIcon.addEventListener('click', function () {
+                topnav.classList.toggle('active');
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <h1>Home</h1>
+        <div class="menu-icon"></div>
+        <div class="topnav">
+            <a href="./schweden2.html">SCHWEDEN</a>
+            <a href="./korea2.html">KOREA</a>
+            <a href="./ueberuns2.html">ABOUT US</a>
+            <a href="./kontakt2.html">KONTAKT</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>Moin und herzlich willkommen!</p>
+        <p>Wir sind Leon & Soeren und wollen euch ueber unsere Erfahrungen aus dem Auslandssemester mit Erasmus informieren.
+            Wir studieren beide an der Friedrich-Schiller-Universitaet und haben einige nuetzliche Informationen sammeln koennen,die wir hier gerne mit euch teilen moechten.</p>
+        <p>Wenn du uns zunaechst naeher kennenlernen moechtest,
+            einfach <a href="./UEBER_UNS.html">hier</a> klicken.</p>
+        <p>Fuer Informationen zum jeweiligen Gastland, klicke einfach auf die gewuenschte Flagge.</p>
+        <div class="image-container">
+            <a href="./Suedkorea2.html"><img src="./Suedkorea2.png" alt="Suedkorea" width="200" height="110"></a>
+            <a href="./Schweden2.html"><img src="./Schweden2.png" alt="Schweden" width="200" height="110"></a>
+        </div>
+        <p>Wir wuenschen dir viel Spaß auf unserem Blog und hoffen dir ein wenig Inspiration geben zu koennen.</p>
+        <p>Wir haben jetzt den Anfang gemacht und wuerden uns freuen, wenn ihr eure gesammelten Auslandserfahrungen mit uns und somit der gesamten Community teilt,
+            sodass mehr junge Menschen inspiriert werden und individuelle Entscheidungen mit Hilfe der Erfahrungsberichten getroffen werden koennen.</p>
+    </div>
+</body>
+</html>

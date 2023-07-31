@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UeBER UNS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url("./world_map2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+        }
+
+        .top-bar {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .top-bar h1 {
+            margin: 0;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+        }
+
+        .menu-icon::before {
+            content: "\2630";
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .topnav {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            padding: 10px 0;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .topnav.active {
+            display: block;
+        }
+
+        .topnav a {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var menuIcon = document.querySelector('.menu-icon');
+            var topnav = document.querySelector('.topnav');
+
+            menuIcon.addEventListener('click', function () {
+                topnav.classList.toggle('active');
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <h1>About us</h1>
+        <div class="menu-icon"></div>
+        <div class="topnav">
+            <a href="./index2.html">HOME</a>
+            <a href="./korea2.html">KOREA</a>
+            <a href="./schweden2.html">SCHWEDEN</a>
+            <a href="./kontakt2.html">KONTAKT</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <style>
+			p {
+				 
+				color: white;
+			  }
+	
+			  h2 {
+				 
+				 color: white;
+			   }
+			  
+			  </style>
+
+		<p>Ich bin Leon, 22 Jahre alt und studiere Wirtschaftswissenschaften mit dem Studienschwerpunkt Betriebswirtschaftslehre. 
+			Tendenziell treibe ich viel Sport und liebe die Natur.
+			Insbesondere Leichtathletik, Schwimmen und Volleyball gehoeren zu meinen Lieblingssportarten. 
+			Generell bin ich ein weltoffener und kommunikationsfreudiger Student, der in einem Auslandsemester, 
+			dass alltaegliche Leben in einem neuen Land, eine neue Kultur sowie weitere soziale Kompetenzen erlernen wollte. 
+			Zudem war es eine exzellente Vorbereitung auf den Master, der eine internationale Auslegung haben soll.
+			Man sammelt im Auslandssemester nicht nur wertvolle Lebenserfahrungen, sondern lernt viele neue Menschen kennen, 
+			sodass du danach zumindest europaweit sehr connected bist. Dies sind die Beweggruende gewesen, mein 5. Semester in Schweden anstatt in Jena zu verbringen.
+		</p>
+		<br>
+		<p>
+			Hey, ich bin Soeren, 24 Jahre alt und Student der Wirtschaftswissenschaften. Urspruenglich komme ich von der Ostseekueste in Rostock, 
+			aber zurzeit lebe ich das Studentenleben in Jena.
+			Wenn ich nicht gerade meine Nase in wirtschaftlichen Theorien stecke, findest du mich auf dem Spielfeld. Fußball und Volleyball sind meine absoluten Leidenschaften. 
+			Es gibt nichts Besseres, als mit meinen Freunden um den Sieg zu kaempfen und dabei ordentlich ins Schwitzen zu geraten.
+			Aber ich bin nicht nur ein Sportsfreund, sondern auch ein echter Abenteurer. Bereits mit 16 Jahren habe ich mich getraut, ein ganzes Jahr im fernen Oklahoma zu verbringen. 
+			Diese Erfahrung hat meinen Horizont erweitert und mich als Person gepraegt.
+			Wenn ich nicht gerade Baelle trete oder Laender erkunde, bin ich oft damit beschaeftigt, neue Reiseplaene zu schmieden. Das Fernweh laesst mich einfach nicht los. Ich liebe es, 
+			neue Orte zu entdecken, in verschiedene Kulturen einzutauchen und unvergessliche Erinnerungen zu sammeln.
+			Aktuell bin ich voller Tatendrang und mache meine Uni-Jahre in Jena unsicher. Hier genieße ich nicht nur das Studentenleben, sondern setze auch ehrgeizige Ziele fuer meine berufliche Zukunft in der Welt der Wirtschaft.
+			Es gibt so viel zu erleben und zu entdecken, und ich bin dankbar fuer jede Moeglichkeit, die mir geboten wird. Also lass uns gemeinsam auf dieses spannende Abenteuer namens Leben losgehen!</p>
+		</p>
+    </div>
+</body>
+</html>
